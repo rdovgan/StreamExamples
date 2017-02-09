@@ -41,9 +41,9 @@ public class FileStreamExample {
 	}
 
 	public static void main(String[] args) {
-		outputFileWithBufferedReaderStream();
-		outputFileWithStream();
-		outputLinesWithFilter(" line");
+		//outputFileWithBufferedReaderStream();
+		//outputFileWithStream();
+		//outputLinesWithFilter(" line");
 	}
 
 }

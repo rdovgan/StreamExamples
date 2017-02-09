@@ -4,6 +4,7 @@ import org.streams.data.TextPattern;
 
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * Created by rdovgan on 09.02.2017.
@@ -28,11 +29,20 @@ public class TextPatternExample {
 		System.out.println("\n");
 	}
 
+	private static void splitStringToStream() {
+		String sentence = "Program creek is a Java site.";
+		System.out.println(sentence);
+		Stream<String> wordStream = Pattern.compile("\\W").splitAsStream(sentence);
+		wordStream.forEach(System.out::print);
+	}
+
 	public static void main(String[] args) {
 		//changeAlphabet();
 
 		//changeText("the");
 		//changeText("e");
+
+		//splitStringToStream();
 	}
 
 }

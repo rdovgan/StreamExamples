@@ -3,12 +3,13 @@ package org.streams.example;
 import org.streams.entity.Box;
 
 import java.util.Random;
+import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
 /**
  * Created by rdovgan on 09.02.2017.
  */
-public class InfiniteStream {
+public class InfiniteStreamExample {
 
 	private static Random random = new Random();
 
