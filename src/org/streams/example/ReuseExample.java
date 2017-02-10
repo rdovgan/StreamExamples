@@ -28,7 +28,7 @@ public class ReuseExample {
 
 	public static void main(String[] args) {
 		//notReusableStream();
-		reusableStream();
+		//reusableStream();
 	}
 
 }
