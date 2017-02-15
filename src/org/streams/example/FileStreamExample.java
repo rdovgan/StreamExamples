@@ -43,7 +43,7 @@ public class FileStreamExample {
 	public static void main(String[] args) {
 		//outputFileWithBufferedReaderStream();
 		//outputFileWithStream();
-		//outputLinesWithFilter(" line");
+		outputLinesWithFilter(" line");
 	}
 
 }

@@ -42,7 +42,7 @@ public class TextPatternExample {
 		//changeText("the");
 		//changeText("e");
 
-		//splitStringToStream();
+		splitStringToStream();
 	}
 
 }

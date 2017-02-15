@@ -13,8 +13,8 @@ public class ReuseExample {
 				Stream.of("d2", "a2", "b1", "b3", "c")
 						.filter(s -> s.startsWith("b"));
 
-		stream.anyMatch(s -> true);    // ok
-		stream.noneMatch(s -> true);   // exception
+		stream.anyMatch(s -> true);
+		stream.noneMatch(s -> true);
 	}
 
 	public static void reusableStream() {
@@ -22,8 +22,12 @@ public class ReuseExample {
 				() -> Stream.of("d2", "a2", "b1", "b3", "c")
 						.filter(s -> s.startsWith("a"));
 
-		streamSupplier.get().anyMatch(s -> true);   // ok
-		streamSupplier.get().noneMatch(s -> true);  // ok
+		streamSupplier.get().anyMatch(s -> true);
+		streamSupplier.get().noneMatch(s -> true);
+		streamSupplier.get().noneMatch(s -> true);
+		streamSupplier.get().anyMatch(s -> true);
+		streamSupplier.get().noneMatch(s -> true);
+		streamSupplier.get().anyMatch(s -> true);
 	}
 
 	public static void main(String[] args) {

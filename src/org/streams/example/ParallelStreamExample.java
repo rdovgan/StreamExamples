@@ -3,6 +3,8 @@ package org.streams.example;
 import org.streams.data.StudentsDataForParallelExample;
 import org.streams.entity.Student;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -11,13 +13,13 @@ import java.util.List;
 public class ParallelStreamExample {
 
 	public static void main(String[] args) {
-		List<Student> students = StudentsDataForParallelExample.studentList;
-		double bestGpa = students
-		     .parallelStream()
-		     .filter(s -> (s.getGraduationYear() == Student.THIS_YEAR))
-		     .mapToDouble(s -> s.getGpa())
-		     .max().getAsDouble();
-		System.out.println(bestGpa);
+		Integer[] intArray = {1, 2, 3, 4, 5, 6, 7, 8 };
+		List<Integer> listOfIntegers =
+				new ArrayList<>(Arrays.asList(intArray));
+		System.out.println("Parallel stream");
+		listOfIntegers
+				.parallelStream()
+				.forEach(e -> System.out.print(e + " "));
 	}
 
 }

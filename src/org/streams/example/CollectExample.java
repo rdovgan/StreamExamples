@@ -48,7 +48,7 @@ public class CollectExample {
 		//setCollect();
 		//average();
 		//sumAndCount();
-		//joining();
+		joining();
 	}
 
 }

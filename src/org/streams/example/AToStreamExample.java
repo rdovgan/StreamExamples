@@ -2,7 +2,9 @@ package org.streams.example;
 
 import org.streams.data.ArrayData;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -27,8 +29,8 @@ public class AToStreamExample {
 
 	public static void main(String[] args) {
 		//rangeToStream();
-		//intsToStream();
-		//arrayToStream();
+//		intsToStream();
+		arrayToStream();
 	}
 
 }

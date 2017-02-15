@@ -28,7 +28,7 @@ public class InfiniteStreamExample {
 	public static void main(String[] args) {
 		//generateBoxes();
 		//iterateValue();
-		//random.ints(1, 100).limit(100).forEach(i -> System.out.print(i + " "));
+		random.ints(1, 100).limit(100).forEach(i -> System.out.print(i + " "));
 	}
 
 }

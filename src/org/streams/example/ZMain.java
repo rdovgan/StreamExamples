@@ -7,10 +7,14 @@ import java.util.stream.Stream;
  */
 public class ZMain {
 
-	public static void main(String[] args) {
+	public static void test() {
 		Stream.of("d2", "a2", "b1", "b3", "c").filter(s -> {
 			System.out.println("filter: " + s);
-			return true;
+			return s.substring(0, 1).equals("b");
 		});
+	}
+
+	public static void main(String[] args) {
+		test();
 	}
 }
